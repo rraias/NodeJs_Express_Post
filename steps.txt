@@ -1,0 +1,14 @@
+1- Criei uma imagem Docker do Postgres com:
+docker run --name 'nome' -e POSTGRES_USER: 'usuário' -e POTGRES_PASSWORD= 'senha' -p 5432(porta do host):5432(porta do container) -d(detached, pra rodar no background) postgres(nome da imagem que usaremos);
+
+2- Primeiro, usei yarn init para gerar o Package.json;
+
+3- Usei o yarn add no eslint e nodemon com a flag -D, de devDependencies. Usei o yarn add express e yarn add pg. Também gerei um arquivo editorConfig;
+
+4- Usamos docker exec(execute) -it(interactive) 'nome do container' bash para acessar o bash. Depois, passamos psql(para acessar o Postgres) -U(user) 'nome do usuario'. \l lista as databases.
+PS. \c 'nome database' para a acessarmos;
+
+5- Criei as instruções do SQL, e passei no terminal do meu docker;
+
+
+
